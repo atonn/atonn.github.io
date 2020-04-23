@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
   </head>
 
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.currentTime = 0;
+      audio.play();
+    }
+  </script>
+
   <body style="background-color: #c0c0c0;">
     <div
       class="window"
@@ -29,7 +37,8 @@
       <div class="window-body">
         <p>Tonne not found.</p>
       </div>
-      <button style="margin: 12px;">OK</button>
+      <button onclick="play()" style="margin: 12px;">OK</button>
+      <audio id="audio" src="win98error.ogg"></audio>
     </div>
   </body>
 </html>
